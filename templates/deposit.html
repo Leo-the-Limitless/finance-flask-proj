@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Deposit
+{% endblock %}
+
+{% block main %}
+<form action="/deposit" , method="post">
+  <input type="number" step="0.01" name="amount" placeholder="Amount ($)" autocomplete="off" class="form-control mx-auto w-auto mb-3">
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+{% endblock %}
